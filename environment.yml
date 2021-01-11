@@ -1,4 +1,4 @@
-name: nitpick
+name: typescript-learning
 
 channels:
   - conda-forge
