@@ -10,3 +10,4 @@
 
 # JavaScript
 node_modules/
+*.js
