@@ -21,7 +21,7 @@ console.log("This is also undefined:", returnsUndefined());
 const add_copy: (a: number, b: number) => number = add_04;
 console.log(add_copy(2, 3));
 
-function addAndHandle(n1: number, n2: number, cb: (number) => void) {
+function addAndHandle(n1: number, n2: number, cb: (n: number) => void) {
   const result = add_04(n1, n2);
   cb(result);
 }

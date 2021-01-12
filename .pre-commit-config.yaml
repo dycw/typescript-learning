@@ -22,13 +22,9 @@ repos:
     hooks:
       - id: check-case-conflict
       - id: check-executables-have-shebangs
-      - id: check-json
       - id: check-merge-conflict
       - id: check-symlinks
-      - id: check-toml
       - id: check-vcs-permalinks
-      - id: check-xml
-      - id: check-yaml
       - id: destroyed-symlinks
       - id: detect-private-key
       - id: end-of-file-fixer
@@ -37,11 +33,10 @@ repos:
         args: [--fix=lf]
       - id: no-commit-to-branch
       - id: trailing-whitespace
-
-  - repo: local
-    hooks:
-      - id: tsc
-        name: tsc
-        language: system
-        entry: tsc
-        files: \.tsx?$
+#  - repo: local
+#    hooks:
+#      - id: tsc
+#        name: tsc
+#        language: system
+#        entry: tsc
+#        files: \.tsx?$

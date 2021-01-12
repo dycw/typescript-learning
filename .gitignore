@@ -9,4 +9,5 @@
 .cache
 
 # JavaScript
+dist/**/*
 node_modules/
