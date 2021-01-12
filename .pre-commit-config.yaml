@@ -44,3 +44,4 @@ repos:
         language: system
         entry: tsc
         files: \.tsx?$ # *.js, *.jsx, *.ts and *.tsx
+        args: [--noEmit]
