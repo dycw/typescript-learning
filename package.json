@@ -1,0 +1,20 @@
+{
+  "name": "typescript-learning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint:ts": "eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dycw/typescript-learning.git"
+  },
+  "author": "Derek Wan",
+  "license": "MIT",
+  "homepage": "https://github.com/dycw/typescript-learning#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.13.0",
+    "@typescript-eslint/parser": "^4.13.0",
+    "eslint": "^7.17.0"
+  }
+}
