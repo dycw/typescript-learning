@@ -19,9 +19,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
-    "eslint": "^7.17.0",
-    "husky": "^4.3.7",
-    "lint-staged": "^10.5.3"
+    "eslint": "^7.17.0"
   },
   "husky": {
     "hooks": {
@@ -29,6 +27,6 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*.ts": "tsc --noEnit"
   }
 }
