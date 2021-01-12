@@ -27,6 +27,9 @@
     }
   },
   "lint-staged": {
-    "*.ts": "tsc --noEnit"
+    "*.ts": "bash -c tsc"
+  },
+  "dependencies": {
+    "lint-staged": "^10.5.3"
   }
 }
