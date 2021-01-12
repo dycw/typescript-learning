@@ -1,3 +1,4 @@
+"use strict";
 function add_04(n1, n2) {
     return n1 + n2;
 }
