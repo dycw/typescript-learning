@@ -18,4 +18,5 @@ jobs:
       - uses: actions/setup-python@v2
         with:
           python-version: ${{ matrix.python-version }}
+      - run: npm install
       - uses: pre-commit/action@v2.0.0
