@@ -22,4 +22,4 @@ jobs:
           python-version: ${{ matrix.python-version }}
           auto-activate-base: false
       - uses: bahmutov/npm-install@v1
-      - uses: pre-commit/action@v2.0.0
+      - run: pre-commit run --all-files
