@@ -2,7 +2,7 @@
   "name": "academind--typescript-course-for-beginners-2020",
   "version": "1.0.0",
   "description": "TypeScript Course for Beginners 2020 - Learn TypeScript from Scratch!",
-  "main": "js-only.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/dycw/typescript-learning/issues"
   },
-  "homepage": "https://github.com/dycw/typescript-learning#readme"
+  "homepage": "https://github.com/dycw/typescript-learning#readme",
+  "devDependencies": {
+    "eslint": "^7.17.0"
+  }
 }
