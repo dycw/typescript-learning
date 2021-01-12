@@ -7,5 +7,5 @@ function add(num1: number, num2: number, num3: number): number {
 }
 
 button.addEventListener("click", function () {
-  console.log(add(+input1.value, +input2.value, 1));
+  console.log(add(+input1.value, +input2.value, 1000));
 });
