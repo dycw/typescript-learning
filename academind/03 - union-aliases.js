@@ -1,3 +1,4 @@
+"use strict";
 function add_03(n1, n2, conv) {
     var result;
     if (typeof n1 === "number" && typeof n2 === "number") {

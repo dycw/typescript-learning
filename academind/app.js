@@ -1,7 +1,4 @@
-var userInput;
-var userName;
-userInput = 5;
-userInput = "Derek";
-if (typeof userInput === "string") {
-    userName = userInput;
-}
+console.log("arst");
+var x = 1;
+var y = "arst";
+console.log(x + y);

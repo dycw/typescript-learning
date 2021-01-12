@@ -1,8 +1,6 @@
-let userInput: unknown;
-let userName: string;
+console.log("arst");
 
-userInput = 5;
-userInput = "Derek";
-if (typeof userInput === "string") {
-  userName = userInput;
-}
+const x = 1;
+const y = "arst";
+
+console.log(x + y);

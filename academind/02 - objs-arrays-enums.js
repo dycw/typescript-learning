@@ -1,3 +1,4 @@
+"use strict";
 var ROLE2;
 (function (ROLE2) {
     ROLE2[ROLE2["ADMIN"] = 0] = "ADMIN";
@@ -9,7 +10,7 @@ var person = {
     age: 30,
     hobbies: ["Sports", "Cooking"],
     role: [2, "author"],
-    role_2: ROLE2.ADMIN
+    role_2: ROLE2.ADMIN,
 };
 console.log(person);
 for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
