@@ -4,7 +4,7 @@
   "description": "TypeScript Course for Beginners 2020 - Learn TypeScript from Scratch!",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:ts": "eslint"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,9 @@
     }
   },
   "lint-staged": {
-    "*.ts": "tsc"
+    "*.ts": "npx lint:ts"
+  },
+  "dependencies": {
+    "husky": "^4.3.7"
   }
 }
