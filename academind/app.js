@@ -1,4 +1,5 @@
+"use strict";
 console.log("Welcome to app.ts!");
-var x = 1;
-var y = "arst";
+const x = 1;
+const y = "arst";
 console.log(x + y);

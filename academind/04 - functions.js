@@ -12,10 +12,10 @@ function returnsUndefined() {
     return; // must have empty return as type -> undefined
 }
 console.log("This is also undefined:", returnsUndefined());
-var add_copy = add_04;
+const add_copy = add_04;
 console.log(add_copy(2, 3));
 function addAndHandle(n1, n2, cb) {
-    var result = add_04(n1, n2);
+    const result = add_04(n1, n2);
     cb(result);
 }
 addAndHandle(5, 6, console.log);

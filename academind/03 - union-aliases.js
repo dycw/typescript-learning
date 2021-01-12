@@ -1,6 +1,6 @@
 "use strict";
 function add_03(n1, n2, conv) {
-    var result;
+    let result;
     if (typeof n1 === "number" && typeof n2 === "number") {
         result = n1 + n2;
     }
