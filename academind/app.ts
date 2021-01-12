@@ -1,25 +1,12 @@
-enum ROLE2 {
-  ADMIN,
-  READ_ONLY,
-  AUTHOR,
+function add_03(n1: number | string, n2: number | string): number | string {
+  let result;
+  if (typeof n1 === "number" && typeof n2 === "number") {
+    result = n1 + n2;
+  } else {
+    result = n1.toString() + n2.toString();
+  }
+  return result;
 }
 
-const person: {
-  name: string;
-  age: number;
-  hobbies: string[];
-  role: [number, string];
-  role_2: ROLE2;
-} = {
-  name: "Derek",
-  age: 30,
-  hobbies: ["Sports", `Cooking`],
-  role: [2, "author"],
-  role_2: ROLE2.ADMIN,
-};
-
-console.log(person);
-
-for (const hobby of person.hobbies) {
-  console.log(hobby, hobby.toUpperCase());
-}
+console.log(add_03(1, 2));
+console.log(add_03("str1", "str2"));

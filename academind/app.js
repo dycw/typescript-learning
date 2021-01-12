@@ -1,18 +1,12 @@
-var ROLE2;
-(function (ROLE2) {
-    ROLE2[ROLE2["ADMIN"] = 0] = "ADMIN";
-    ROLE2[ROLE2["READ_ONLY"] = 1] = "READ_ONLY";
-    ROLE2[ROLE2["AUTHOR"] = 2] = "AUTHOR";
-})(ROLE2 || (ROLE2 = {}));
-var person = {
-    name: "Derek",
-    age: 30,
-    hobbies: ["Sports", "Cooking"],
-    role: [2, "author"],
-    role_2: ROLE2.ADMIN
-};
-console.log(person);
-for (var _i = 0, _a = person.hobbies; _i < _a.length; _i++) {
-    var hobby = _a[_i];
-    console.log(hobby, hobby.toUpperCase());
+function add_03(n1, n2) {
+    var result;
+    if (typeof n1 === "number" && typeof n2 === "number") {
+        result = n1 + n2;
+    }
+    else {
+        result = n1.toString() + n2.toString();
+    }
+    return result;
 }
+console.log(add_03(1, 2));
+console.log(add_03("str1", "str2"));
