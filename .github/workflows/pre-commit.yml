@@ -9,6 +9,9 @@ jobs:
   pre-commit:
     name: pre-commit (${{ matrix.os }}, ${{ matrix.python-version }})
     runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        shell: bash -l {0}
     strategy:
       matrix:
         os: [ubuntu-latest]
@@ -22,4 +25,5 @@ jobs:
           python-version: ${{ matrix.python-version }}
           auto-activate-base: false
       - uses: bahmutov/npm-install@v1
-      - run: pre-commit run --all-files
+      - run: |
+          pre-commit run --all-files
