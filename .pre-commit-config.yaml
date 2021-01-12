@@ -36,3 +36,11 @@ repos:
         args: [--fix=lf]
       - id: no-commit-to-branch
       - id: trailing-whitespace
+
+  - repo: local
+    hooks:
+      - id: tsc
+        name: tsc
+        language: system
+        entry: tsc
+        files: \.tsx?$ # *.js, *.jsx, *.ts and *.tsx
