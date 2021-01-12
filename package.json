@@ -1,7 +1,6 @@
 {
-  "name": "academind--typescript-course-for-beginners-2020",
+  "name": "typescript-learning",
   "version": "1.0.0",
-  "description": "TypeScript Course for Beginners 2020 - Learn TypeScript from Scratch!",
   "main": "index.js",
   "scripts": {
     "lint:ts": "eslint"
@@ -12,24 +11,10 @@
   },
   "author": "Derek Wan",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/dycw/typescript-learning/issues"
-  },
   "homepage": "https://github.com/dycw/typescript-learning#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.13.0",
     "@typescript-eslint/parser": "^4.13.0",
     "eslint": "^7.17.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.ts": "npx lint:ts"
-  },
-  "dependencies": {
-    "husky": "^4.3.7"
   }
 }
