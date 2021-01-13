@@ -42,3 +42,11 @@ function setUserName() {
   localStorage.setItem("name", myName);
   (myHeading as HTMLInputElement).textContent = "Mozilla is cool, " + myName;
 }
+
+function setUserNameAlt() {
+  const myName = prompt("Please enter your name.");
+  if (myName !== null) {
+    localStorage.setItem("name", myName);
+    (myHeading as HTMLInputElement).textContent = "Mozilla is cool, " + myName;
+  }
+}
