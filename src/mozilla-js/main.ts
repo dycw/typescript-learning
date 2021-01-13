@@ -32,3 +32,13 @@ if (myImage !== null) {
     }
   };
 }
+
+const myButton = document.querySelector("button");
+// (myRow.querySelector('.myClass') as HTMLInputElement).value = " a vaule";
+// const myHeading = document.querySelector("h1");
+
+function setUserName() {
+  const myName = prompt("Please enter your name.") as string;
+  localStorage.setItem("name", myName);
+  (myHeading as HTMLInputElement).textContent = "Mozilla is cool, " + myName;
+}
