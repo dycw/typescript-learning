@@ -1,15 +1,17 @@
 console.log("Hello from main.ts");
 
-const myHeading = document.querySelector("h1");
+/*A Hello world! example*/
 
+const myHeading = document.querySelector("h1");
 if (myHeading !== null) {
   myHeading.textContent = "Hello world! (set by script)";
 
   // alert("hello!");
 }
 
-const myHtml = document.querySelector("html");
+/*Events*/
 
+const myHtml = document.querySelector("html");
 if (myHtml !== null) {
   console.log("Adding onClick to HTML");
 
@@ -17,6 +19,8 @@ if (myHtml !== null) {
   //   alert("Ouch! Stop poking me!");
   // };
 }
+
+/*Adding an image changer*/
 
 const myImage = document.querySelector("img");
 
@@ -33,20 +37,25 @@ if (myImage !== null) {
   };
 }
 
+/*Adding a personalized welcome message*/
+
 const myButton = document.querySelector("button");
-// (myRow.querySelector('.myClass') as HTMLInputElement).value = " a vaule";
-// const myHeading = document.querySelector("h1");
 
 function setUserName() {
-  const myName = prompt("Please enter your name.") as string;
-  localStorage.setItem("name", myName);
-  (myHeading as HTMLInputElement).textContent = "Mozilla is cool, " + myName;
-}
-
-function setUserNameAlt() {
   const myName = prompt("Please enter your name.");
+
   if (myName !== null) {
     localStorage.setItem("name", myName);
-    (myHeading as HTMLInputElement).textContent = "Mozilla is cool, " + myName;
+    if (myHeading !== null) {
+      myHeading.textContent = `Mozilla is cool, ${myName}`;
+    }
+  } else {
+    setUserName();
   }
+}
+
+if (myButton !== null) {
+  myButton.onclick = function () {
+    setUserName();
+  };
 }
