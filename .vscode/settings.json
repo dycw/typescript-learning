@@ -1,0 +1,6 @@
+{
+  "files.exclude": {
+    "**/.dummy.py": true
+  },
+  "python.pythonPath": "/home/derek/miniconda3/envs/learning-typescript/bin/python"
+}
